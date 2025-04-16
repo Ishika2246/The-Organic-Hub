@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Organic Hub</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive;
+      margin: 0;
+      background-color: #fff0f5;
+      color: #d63384;
+    }
+    header {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 25px;
+      font-weight: bold;
+    }
+     footer {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    nav {
+      text-align: center;
+      background-color: #ffe4ec;
+      padding: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #d63384;
+      font-weight: bold;
+    }
+    section {
+      padding: 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+    }
+#about{
+    font-size: 18px;
+    
+}
+    .category {
+      margin-bottom: 2rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background-color: white;
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      position: relative;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 1rem;
+      height: 180px;
+      object-fit: cover;
+    }
+    
+    .reviews {
+      margin-top: 2rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    input, button {
+      padding: 0.8rem;
+      border: 1px solid #d63384;
+      border-radius: 8px;
+      font-family: inherit;
+    }
+    textarea {
+      padding: 0.8rem;
+      border: 1px solid #d63384;
+      border-radius: 8px;
+      font-family: inherit;
+    }
+    button {
+      background-color: #ff69b4;
+      color: white;
+      cursor: pointer;
+    }
+    #review-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 1rem;
+  
+}
+    .review-item {
+  background-color: #fff0f5;
+  border-left: 3px solid #ff69b4;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 250px;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  margin-bottom: 2rem;
+  
+}
+.review-item .stars {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+/* Product card hover */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 105, 180, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Review box hover */
+.review-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(255, 105, 180, 0.2);
+  background-color: #ffe4ec;
+  transition: all 0.3s ease;
+}
+
+/* Navigation link hover */
+nav a:hover {
+  color: #ff1493;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+/* Submit button hover */
+button:hover {
+  background-color: #ff1493;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+    @media (max-width: 600px) {
+      header, footer {
+        font-size: 1.5rem;
+        padding: 1rem;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    🍰 The Organic Hub 100% vegetarian Homemade Bakery 🍩
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#reviews">Reviews</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="text-align: center" >
+        "At The Organic Hub Homemade Bakery, everything is homemade with love, using only the finest ingredients. From Cakes and Cookies to Donuts and Cupcakes all our items are 100% vegetarian and made with care. You can even customize your favorite Cakes, Cupcakes, Donuts according to your choice for your loved ones 💝"
+       <br> Contact : Nidhi Patwari (8076387845)
+    </p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+
+    <div class="category">
+      <h3 style="text-align:center;">Cakes</h3>
+      <div class="products">
+        <div class="card">
+          <img src="images/chocolate cake.jpeg" alt="Choco Cupcake">
+        
+          <h4>Chocolate Cake</h4>
+        </div>
+        <div class="card">
+          <img src="images/cheesecake.jpeg" alt="Oreo Delight">
+          
+          <h4>Cheesecake</h4>
+        </div>
+        <div class="card">
+            <img src="images/pinata cake.jpeg" alt="Oreo Delight">
+<h4>Pinata Cake</h4>
+          </div>
+          <div class="card">
+            <img src="images/red velvet.jpeg" alt="Oreo Delight">
+<h4>Red Velvet Cake</h4>
+          </div>
+          <div class="card">
+            <img src="images/blueberry.jpeg" alt="Oreo Delight">
+<h4>Blueberry Cake</h4>
+          </div>
+          <div class="card">
+            <img src="images/butterscoth.jpeg" alt="Oreo Delight">
+<h4>Butterscotch Cake</h4>
+          </div>
+          <div class="card">
+            <img src="images/stawberry.jpeg" alt="Oreo Delight">
+<h4>Stawberry Cake</h4>
+          </div>
+          <div class="card">
+            <img src="images/dry cake.jpeg" alt="Oreo Delight">
+<h4>Dry Cakes</h4>
+          </div>
+          
+
+      </div>
+      
+    </div>
+
+    <div class="category">
+      <h3 style="text-align:center;">Donuts</h3>
+      <div class="products">
+        <div class="card">
+          <img src="images/donuts.jpeg" alt="Glazed Donut">
+          <h4>Chocolate Donuts</h4>
+        </div>
+        <div class="card">
+          <img src="images/cream filled donut.jpeg" alt="Sprinkle Donut">
+          <h4>Cream Filled Donuts</h4>
+        </div>
+      </div>
+    </div>
+    <div class="category">
+        <h3 style="text-align:center;">Brownies</h3>
+        <div class="products">
+          <div class="card">
+            <img src="images/brownie.jpeg" alt="Glazed Donut">
+           
+            <h4>Chocolate Fudge Brownie</h4>
+          </div>
+          </div>
+      </div>
+
+    <div class="category">
+      <h3 style="text-align:center;">Homemade Cookies (Healthy Edition)</h3>
+      <div class="products">
+        <div class="card">
+          <img src="images/chococookies.jpeg" alt="Raspberry Macaron">
+          <h4>Chocochips Cookies</h4>
+        </div>
+        <div class="card">
+          <img src="images/atta cookies.jpeg" alt="Lemon Macaron">
+         <h4>Atta Cookies</h4>
+        </div>
+        <div class="card">
+            <img src="images/nankhatai.jpeg" alt="Lemon Macaron">
+          
+            <h4>Nankhatai Cookies</h4>
+          </div>
+          <div class="card">
+            <img src="images/oats cookies.jpeg" alt="Lemon Macaron">
+          
+            <h4>Oats Cookies</h4>
+          </div>
+          <div class="card">
+            <img src="images/ragi.jpeg" alt="Lemon Macaron">
+          
+            <h4>Ragi Cookies</h4>
+          </div>
+          <div class="card">
+            <img src="images/walnut oats cookies.jpeg" alt="Lemon Macaron">
+          
+            <h4>Walnut Oats Cookies</h4>
+          </div>
+          <div class="card">
+            <img src="images/guleten chocolate.jpeg" alt="Lemon Macaron">
+          
+            <h4>Gluten free Chocolate Cookies</h4>
+          </div>
+          <div class="card">
+            <img src="images/fritchips cookies.jpeg" alt="Lemon Macaron">
+          
+            <h4>Fruitcake Cookies</h4>
+          </div>
+      </div>
+    </div>
+  
+  
+  <div class="category">
+    <h3 style="text-align:center;">Homemade Chocolates </h3>
+    <div class="products">
+      <div class="card">
+        <img src="images/cake pops.jpg" alt="Glazed Donut">
+       <h4>Cake Pops</h4>
+      </div>
+      <div class="card">
+        <img src="images/chocolatess.jpg" alt="Glazed Donut">
+        <h4> Home made Chocolates</h4>
+      </div>
+      <div class="card">
+        <img src="images/flavored chocolates.jpg" alt="Glazed Donut">
+       
+        <h4>Customized chocolates <h4>
+      </div>
+      </div>
+  </div>
+</section>
+
+  <section id="reviews">
+    <h2>Customer Reviews</h2>
+    <form id="review-form">
+      <input type="text" placeholder="Your Name" id="name" required />
+      <textarea placeholder="Your Review" id="review" required></textarea>
+      <label for="stars">Rating:</label>
+      <select id="stars" required>
+        <option value="">Select</option>
+        <option value="⭐️⭐️⭐️⭐️⭐️">5 Stars</option>
+        <option value="⭐️⭐️⭐️⭐️">4 Stars</option>
+        <option value="⭐️⭐️⭐️">3 Stars</option>
+        <option value="⭐️⭐️">2 Stars</option>
+        <option value="⭐️">1 Star</option>
+      </select>
+      <button type="submit">Submit Review</button>
+    </form>
+    <div id="review-list"></div>
+  </section>
+
+
+  <footer>
+    <div class="social-links">
+        <a href="https://www.instagram.com/the_orgnaic_hub?igsh=dng3aDdwY2dkeTF0" target="_blank" class="insta-link">
+          <i class="fab fa-instagram"></i> Follow us
+        </a>
+        <a href="https://wa.me/8076387845" target="_blank" class="whatsapp-link">
+          <i class="fab fa-whatsapp"></i> Chat with us
+        </a>
+      </div>
+<br>      
+    © 2025 The Organic Hub 100% Homemade Bakery with 100% Pure Veg | Sweetness in every bite! 
+  </footer>
+
+  <script>
+    const form = document.getElementById('review-form');
+    const list = document.getElementById('review-list');
+  
+    // Save review to localStorage
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const review = document.getElementById('review').value;
+      const stars = document.getElementById('stars').value;
+  
+      const newReview = { name, review, stars };
+      let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+      reviews.unshift(newReview);
+      localStorage.setItem('reviews', JSON.stringify(reviews));
+  
+      displayReviews();
+      form.reset();
+    });
+  
+    // Display reviews from localStorage
+    function displayReviews() {
+      const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+      list.innerHTML = '';
+      reviews.forEach((data) => {
+        const div = document.createElement('div');
+        div.className = 'review-item';
+        div.innerHTML = `<div class='stars'>${data.stars}</div><strong>${data.name}</strong><p>${data.review}</p>`;
+        list.appendChild(div);
+      });
+    }
+  
+    // Load reviews on page load
+    window.onload = displayReviews;
+  </script>
+  
+</body>
+</html>
